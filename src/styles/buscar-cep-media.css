@@ -1,0 +1,21 @@
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .via-cep__secao-form {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .via-cep__header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .via-cep__logo {
+        margin-bottom: 10px;
+    }
+
+    .via-cep__texto h1 {
+        font-size: 20px;
+    }
+}

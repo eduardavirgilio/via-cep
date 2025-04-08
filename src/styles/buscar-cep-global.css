@@ -1,0 +1,121 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* Fundo claro */
+    color: #333; /* Cor do texto */
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho com o logo e título */
+.via-cep__header {
+    background-color: #003a6d; /* Amarelo dos Correios */
+    color: #ffcc00; /* Azul dos Correios */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.via-cep__logo {
+    font-size: 50px;
+}
+
+.via-cep__texto h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Estilo do formulário */
+.via-cep__secao-form {
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.via-cep__secao-form-cep {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos campos de entrada */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #003a6d; /* Azul dos Correios */
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #003a6d; /* Azul dos Correios */
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-control:disabled {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+/* Estilo para os botões */
+button {
+    
+    background-color: #ffcc00; /* Amarelo dos Correios */
+    color: #003a6d; /* Azul dos Correios */
+    padding: 12px 20px;
+    border: 1px solid #003a6d; /* Azul dos Correios */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço entre os botões */
+}
+
+button:hover {
+    background-color: #ffb700; /* Amarelo mais forte */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Adicionando mais espaço entre os botões */
+button + button {
+    margin-top: 15px; /* Espaço maior entre os botões */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .via-cep__secao-form-cep {
+        padding: 15px;
+    }
+
+    .via-cep__texto h1 {
+        font-size: 28px;
+    }
+}
