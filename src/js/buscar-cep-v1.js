@@ -62,3 +62,12 @@ const atribuirCampos = (data) =>{
     cidade.value = data.localidade;
     estado.value = data.uf;
 }
+
+btnLimpar.addEventListener('click', () =>{
+    const cepInput = document.querySelector('#cep').value = '';
+    const rua = document.querySelector('#rua').value = '';
+    const complemento = document.querySelector('#complemento').value = '';
+    const bairro = document.querySelector('#bairro').value = '';
+    const cidade = document.querySelector('#cidade').value = '';
+    const estado = document.querySelector('#estado').value = '';
+})
